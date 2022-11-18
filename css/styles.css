@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+html{
+    max-width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #f48480;
+}
+
+nav .logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-right: auto;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 40px;
+}
+
+nav .icons{
+    margin-right: 40px;
+    margin-top: 2px;
+}
+
+nav .icon{
+    margin-right: 16px;
+}
+
+nav .icon img{
+    width: 14px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+main img{
+    width: 400px;
+}
+
+main .description h1{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+main .description p{
+    color: white;
+    font-size: 24px;
+    max-width: 900px;
+    font-weight: 600;
+}
+
+main:before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 90%;
+    z-index: -1;
+    background-color: #48d8a4;
+    transform: rotate(7deg);
+    top: -120px;
+}
+
+
+.tecno{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tecno h1{
+    color: #f0535d;
+    font-size: 50px;
+}
+
+.tecno p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.tecno-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+}
+
+.tecno-list div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.tecno-list div span{
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.tecno-list div img{
+    width: 60px;
+}
+
+.projects{
+    width: 100%;
+    height: 100%;
+}
+
+.projects h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16vw;
+}
+
+.projects:before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    left: -10%;
+    z-index: -1;
+    background: #22333b;
+    transform: rotate(-4deg);
+}
+
+.projects .github{
+    display: flex;
+    color: white;
+}
+
+.projects .github a{
+    color: white;
+}
+
+.projects .github .github-logo{
+    width: 200px;
+    height: 200px;
+    filter: invert(100%) sepia(95%) saturate(20%) hue-rotate(302deg) brightness(105%) contrast(102%);
+}
+
+.projects-card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.projects-card img{
+    height: 100px;
+    width: 200px;
+}
+
+.projects-card .title{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    left: 0px;
+    transform: translateY(-190px);
+    z-index: -1;
+    background: #22333b;
+}
+
+footer{
+    width: 100%;
+    background-color: #f0535d;
+    color: white;
+    text-align: center;
+    padding: 25px 0 20px;
+    margin-top: 80px;
+}
+
+footer p{
+    margin: 0;
+}
